@@ -48,8 +48,8 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => "localhost",
             'port' => "3306",
-            // 'database' => env('DB_DATABASE', 'forge'),
-            'database' => "pagina_de_peliculas",
+            'database' => env('DB_DATABASE', 'forge'),
+            // 'database' => "pagina_de_peliculas",
             'username' => "root",
             'password' => "123456",
 
