@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "268055181512",
+    "firebase_url": "https://pagina-de-peliculas-ecuadom-default-rtdb.firebaseio.com",
+    "project_id": "pagina-de-peliculas-ecuadom",
+    "storage_bucket": "pagina-de-peliculas-ecuadom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268055181512:android:06ab8c49d2d3d212518dfd",
+        "android_client_info": {
+          "package_name": "ec.paginadepeliculas.pagina_de_peliculas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268055181512-fv3jjvmm7gohtup4k1712n9u697t6r4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB7GkfstAJGiaS9M4USdCAOON-IqDmNSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268055181512-fv3jjvmm7gohtup4k1712n9u697t6r4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
