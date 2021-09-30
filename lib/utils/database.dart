@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-final CollectionReference _mainCollection = _firestore.collection('movies');
 
 class Database {
   static String? userUid;
@@ -25,11 +24,11 @@ class Database {
     };
     await documentReferencer
         .set(data)
-        .whenComplete(() => print("Note item added to the database"))
+        .whenComplete(() => print("Movie added to the database"))
         .catchError((e) => print(e));
     await genreReferencer
         .set(genreData)
-        .whenComplete(() => print("Note item added to the database"))
+        .whenComplete(() => print("Genre added to the database"))
         .catchError((e) => print(e));
   }
 
@@ -48,7 +47,7 @@ class Database {
 
     await documentReferencer
         .set(data)
-        .whenComplete(() => print("Note item added to the database"))
+        .whenComplete(() => print("Actor added to the database"))
         .catchError((e) => print(e));
   }
 
@@ -69,7 +68,7 @@ class Database {
 
     await documentReferencer
         .update(data)
-        .whenComplete(() => print("Note item updated in the database"))
+        .whenComplete(() => print("Movie updated in the database"))
         .catchError((e) => print(e));
   }
 
@@ -91,7 +90,7 @@ class Database {
 
     await documentReferencer
         .update(data)
-        .whenComplete(() => print("Note item updated in the database"))
+        .whenComplete(() => print("Actor updated in the database"))
         .catchError((e) => print(e));
   }
 
@@ -120,7 +119,7 @@ class Database {
 
     await documentReferencer
         .delete()
-        .whenComplete(() => print('Note item deleted from the database'))
+        .whenComplete(() => print('Movie deleted from the database'))
         .catchError((e) => print(e));
   }
 
@@ -131,7 +130,7 @@ class Database {
 
     await documentReferencer
         .delete()
-        .whenComplete(() => print('Note item deleted from the database'))
+        .whenComplete(() => print('Actor deleted from the database'))
         .catchError((e) => print(e));
   }
 }
